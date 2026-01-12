@@ -12,7 +12,7 @@
 
   
     --nav-link-color: #ffffff;
-    --nav-background-color: #251605;
+    --nav-background-color: #000000;
     --nav-hover-link-color: white;
     --nav-hover-background-color: #032136;
 }
@@ -43,7 +43,7 @@ header #course-title {
   display: flex;
   width: 100%;
   
-  background: #333;
+  background: var(--nav-background-color);
 }
 
 .nav-bar ul {
@@ -67,7 +67,7 @@ header #course-title {
     text-align: center;
     text-transform: uppercase;
     padding: 1rem;
-	background-color: #333;
+	  background-color: var(--nav-background-color);
 	
 }
 
@@ -83,7 +83,7 @@ main {
   display:grid;
   width: 100%;
   margin: 0;
-  padding: 2 rem;
+  padding: 2rem;
   background: rgb(253, 253, 252);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  1fr ;
   grid-template-rows: auto auto 1fr;
@@ -164,13 +164,6 @@ main h1{
   height: auto;
   border: 1px solid #ccc;
 } 
-
-.about-me p{
-  margin: 0;
-  flex: 1;
-  line-height: 1.6;
-}
-
 
 
 
