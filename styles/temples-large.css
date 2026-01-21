@@ -1,0 +1,42 @@
+@media (min-width: 32rem) {
+ 
+  .menu-button{
+    display: none;
+  }
+
+  
+  .nav{
+    position: static;
+    width: auto;
+    height: auto;
+    padding-top: 0;
+    transition: none;
+    background: transparent;
+    left: auto;
+  }
+
+  .nav ul{
+    flex-direction: row;       
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .nav a{
+    background: rgba(0,0,0,0.25);
+    border-radius: 8px;
+  }
+
+  .nav a:hover{
+    background: rgba(255,255,255,0.15);
+  }
+
+  
+  .site-header{
+    justify-content: space-between;
+  }
+
+ 
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
