@@ -1,0 +1,58 @@
+@media (min-width: 900px) {
+    :root {
+    
+    --accent1-color: #037173;
+    --accent2-color: rgb(84, 84, 19);
+
+    --heading-font: Playfair Display, serif;
+    --paragraph-font: Playfair Display, serif;
+
+  
+    --border: #000000;
+    --header: #025370;
+    --card-h2: rgb(15, 153, 127);
+    --card-background: rgba(255, 255, 255, 0.9);
+}
+
+  .hero {
+    position: relative;      
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 8px solid var(--card-h2);
+  }
+
+  .hero img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;             
+    display: block;
+  }
+
+  .data {
+    position: absolute;
+    top: 120px;                      
+    width: 320px;
+    margin: 0;
+    background: var(--card-background);
+  }
+.weather {
+    position: absolute;
+    top: 400px;                      
+    width: 320px;
+    margin: 0;
+    background: var(--card-background);
+  }
+  .data { left: 40px; }
+  .weather { right: 40px;}
+
+  .weather-svg {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.15em;
+    margin-left: 6px;
+    
+  }
+}

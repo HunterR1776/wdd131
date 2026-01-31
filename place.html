@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – temples – Dylan Rhoads</title>
+    <meta name="description" content="WDD 131 – Country Page Including Data and Weather - Dylan Rhoads ">
+    <meta name="author" content="Dylan Rhoads">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Maui, Hawaii</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                
+                <source
+                srcset="images/hero-large.webp"
+                media="(min-width: 900px)"
+                width="1200"
+                height="700"
+                />
+
+                
+                <source
+                srcset="images/hero-small.webp"
+                media="(max-width: 899px)"
+                width="600"
+                height="400"
+                />
+
+                
+                <img
+                src="images/hero-large.webp"
+                alt="Beach in Maui, Hawaii"
+                loading="lazy"
+                />
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <div class="row"><dt>Area:</dt><dd>1,883 km²</dd></div>
+                <div class="row"><dt>Population:</dt><dd>164,221</dd></div>
+                <div class="row"><dt>Capital:</dt><dd>Honolulu</dd></div>
+                <div class="row"><dt>Languages:</dt><dd>Hawaiian, English</dd></div>
+                <div class="row"><dt>Currency:</dt><dd>USD</dd></div>
+                <div class="row"><dt>Time Zone:</dt><dd>GMT-10</dd></div>
+                <div class="row"><dt>Region:</dt><dd>Pasific Islands</dd></div>
+            </dl>
+
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img
+                class="weather-svg"
+                src="images/weather.svg"
+                alt="Partly cloudy weather icon"
+                width="48"
+                height="48"
+            />
+            <dl>
+                <div class="row"><dt>Temperature:</dt><dd><span id="temp">10</span> °F</dd></div>
+                <div class="row"><dt>Condition:</dt><dd><span id="condition">sunny</span></dd></div>
+                <div class="row"><dt>Wind:</dt><dd><span id="wind">5</span> mph</dd></div>
+                <div class="row"><dt>Wind Chill:</dt><dd><span id="windchill">—</span></dd></div>
+            </dl>
+        </section>
+
+    </main>
+    <footer>
+        <p>@<span id="currentYear"></span> - Dylan Rhoads - USA</p>
+        <p class="Modification">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
