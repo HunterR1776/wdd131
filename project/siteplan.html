@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Dylan Rhoads</title>
+    <meta name="description" content="WDD 131 – Precision Rifle Shooting - Dylan Rhoads - Home page">
+    <meta name="author" content="Dylan Rhoads">
+    <link rel="stylesheet" href="./styles/siteplan.css">
+    <link rel="stylesheet" href="./styles/siteplan-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.png" alt="Precision Rifle Shooting logo">
+            <h1>Precision Rifle Shooting</h1>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Open menu" aria-expanded="false">
+         &#9776;
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" id="home" >Home</a></li>
+                <li><a href="#" id="history">History</a></li>
+                <li><a href="#" id="gear">Gear</a></li>
+                <li><a href="#" id="large">resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <h1>Content</h1>
+       <section class="card1">
+            <h2>Purpose</h2>
+            <p>The purpose of this site is to provide information and resources to those interested in PRS (Precision Rifle Shooting) or those already particpating in the sport. </p>
+            <h3>Color Schema</h3>
+            <p>The plan for this site is to use darker complimenatry colors. the blues and grays provide adeqaute contrast.</p>
+            <p>The colors are:</p>
+            <p>Light Blue Gray (#9FB0BF) - Main background</p>
+            <p>Dark Space (#1A2430) - Header and card backbround</p>
+            <p>Vintage Dark Blue (#2A3746) - card h1 background</p>
+            <p>White - Text</p>
+            <h3>Typography</h3>
+            <p>This site will be keeping things simple my only using 1 font: Playfair Display</p>
+            <h3>Wireframes</h3>
+            <p>I liked the wireframe used in the temples assignemnt. Im going to reuse that for the most part.  Im going to align sections vertical on the mobile view and keep the cards aligned horizontally in the desktop</p>
+            <h4>mobile</h4>
+            <img src="images/mobile.png" alt="mobile">
+            <h4>Desktop</h4>
+            <img src="images/desktop.png" alt="desktop">
+        </section>
+       <section class="card2">
+        <h2>Senarios</h2>
+        <p>Where do I go for information on PRS style shooting?</p>
+        <p>how do I get into PRS style shooting?</p>
+        <p>Where do I go to get quality gear that wont break the bank?</p>
+       </section>
+    </main>
+    <footer>
+        <p>@<span id="currentYear"></span> - Dylan Rhoads - USA</p>
+        <p class="Modification">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

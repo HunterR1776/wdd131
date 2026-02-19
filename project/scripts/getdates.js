@@ -1,3 +1,8 @@
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
+
+document.getElementById("lastModified").textContent = document.lastModified;
+
 const menuButton = document.getElementById("menuButton");
 const nav = document.querySelector(".nav");
 
