@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Dylan Rhoads</title>
+    <meta name="description" content="WDD 131 – Precision Rifle Shooting - Dylan Rhoads - Home page">
+    <meta name="author" content="Dylan Rhoads">
+    <link rel="stylesheet" href="./styles/site.css">
+    <link rel="stylesheet" href="./styles/site-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filteredHistory.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.png" alt="Precision Rifle Shooting logo">
+            <h1>Precision Rifle Shooting</h1>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Open menu" aria-expanded="false">
+         &#9776;
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../project/site.html" id="home" >Home</a></li>
+                <li><a href="../project/history.html" id="history">History</a></li>
+                <li><a href="../project/gear.html" id="gear">Gear</a></li>
+                <li><a href="../project/resources.html" id="resources">resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>History</h1>
+        <nav class="filter-nav">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter="old">Before 1950</button>
+            <button type="button" data-filter="modern">1950–1999</button>
+            <button type="button" data-filter="prs">2000+</button>
+        </nav>
+        <section class="gallery">
+            <figure>
+                <img src="images/minie.jpeg" alt="Minie">
+                <figcaption>1,000 Yards in 1850</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/war.jpeg" alt="war">
+                <figcaption>The Second World War</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/competition.jpeg" alt="Competition">
+                <figcaption>Competition in 1960</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/1990.jpeg" alt="1990">
+                <figcaption>Popularity in the 90's</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/prs.jpeg" alt="prs">
+                <figcaption>The Precision Rifle Series</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>@<span id="currentYear"></span> - Dylan Rhoads - USA</p>
+        <p class="Modification">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

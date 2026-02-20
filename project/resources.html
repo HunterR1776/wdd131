@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Dylan Rhoads</title>
+    <meta name="description" content="WDD 131 – Precision Rifle Shooting - Dylan Rhoads - Home page">
+    <meta name="author" content="Dylan Rhoads">
+    <link rel="stylesheet" href="./styles/site.css">
+    <link rel="stylesheet" href="./styles/site-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.png" alt="Precision Rifle Shooting logo">
+            <h1>Precision Rifle Shooting</h1>
+        </div>
+        <button id="menuButton" class="menu-button" aria-label="Open menu" aria-expanded="false">
+         &#9776;
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../project/siteplan.html" id="home" >Home</a></li>
+                <li><a href="../project/history.html" id="history">History</a></li>
+                <li><a href="../project/gear.html" id="gear">Gear</a></li>
+                <li><a href="../project/resources.html" id="resources">resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <h1>Resources</h1>
+       <section class="card1">
+        <h2>Saftey and Education</h2>
+        <p>Education and safety are foundational to PRS-style precision rifle shooting. Before focusing on performance or competition, shooters are expected to understand and consistently apply core firearm safety principles, including safe muzzle direction, proper handling, and awareness of their surroundings. Formal training—whether through certified instructors, local clubs, or structured competition environments—helps participants develop safe gun handling habits, range etiquette, and responsible equipment management. PRS matches are run with strict safety briefings, clearly defined firing lines, and range officer oversight to ensure that every stage is conducted in a controlled and disciplined manner. Emphasizing education not only improves consistency and confidence, but also reinforces the culture of responsibility and sportsmanship that defines the precision shooting community</p>
+        <img src="images/saftey.jpeg" alt="saftey">
+    
+        </section>
+       <section class="card2">
+        <h2>The Weekly Run Down</h2>
+        <p>The Weekly Run Down is a digital newsletter that covers recent news in the sport, shooter highlights and sometimes special deals. Sign up using your email to recieve this PRS gold! </p>
+        <form class="review-form" method="get" action="confirmation.html">
+            <fieldset>
+                <legend>The Weekly Run Down</legend>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" autocomplete="name" placeholder="prsboss@gmail.com">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement">
+                    <label for="agreement-box"> I agree to allow "Precision Rifle Shooting" to send me weekly emails.</label>
+                </div>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+       </section>
+    </main>
+    <footer>
+        <p>@<span id="currentYear"></span> - Dylan Rhoads - USA</p>
+        <p class="Modification">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
